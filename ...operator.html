@@ -1,0 +1,72 @@
+<!-- 1) - spread operator -->
+
+<html>
+    <body>
+        <script>
+            odd=[1,2,4]
+            combined=[5,6,7,...odd]
+            console.log(combined);          //(6) [5, 6, 7, 1, 2, 4]
+            document.write(combined);       //5,6,7,1,2,4
+        </script>
+    </body>
+</html>
+
+<hr>
+
+
+<html>
+    <body>
+        <script>
+           const num1=[23,55,21,87,56]
+           const num2=[15,16,18,99]
+           const fnum=[...num1,...num2]
+           let maxvalue=Math.max(...fnum)
+           console.log(fnum)
+           console.log(...fnum)
+           console.log(maxvalue)          
+                                                //   (9) [23, 55, 21, 87, 56, 15, 16, 18, 99]
+
+                                                //    23 55 21 87 56 15 16 18 99
+                                                //    99
+        </script>
+    </body>
+</html>
+
+<hr>
+
+
+<!-- 2) - rest operator -->
+
+
+<html>
+    <body>
+        <script>
+            function v(a,b,...args) {
+                console.log(args)
+                console.log(a)                         // (8) [3, 4, 5, 6, 7, 8, 9, 10]
+                                                        //  1
+            }
+            v(1,2,3,4,5,6,7,8,9,10)
+        </script>
+    </body>
+</html>
+
+<hr>
+
+
+
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function w(a,b,...c) {
+                document.write(`value of a & b is ${a} ${b} <br>`);
+                document.write(`value of c is in array ${c}`);
+                document.write(`<br> index value at 0 is ${c[0]} `);       // value of a & b is Dhoni Rohit
+                                                                //  value of c is in array Kohli,Rahul,Ravindra
+                                                              // index value at 0 is Kohli
+            }
+            w("Dhoni","Rohit","Kohli","Rahul","Ravindra")
+        </script>
+    </body>
+</html>
