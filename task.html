@@ -1,0 +1,45 @@
+<!--1) -  Write Ecmascript function to be called on button click. Take one division with some text and no decoration 
+initialy take font-size and style as default argument and pass background color and text color while passing 
+argument to function style change on button click event. -->
+
+
+<html>
+    <head>
+        <script>
+            fun=(bg,tx,size=50,style="italic") =>
+            {
+                i=document.getElementById("d");
+                i.style.color=tx;
+                i.style.fontSize=size;
+                i.style.fontStyle=style;
+                i.style.backgroundColor=bg;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d" style="width:50%;height:50%">spread happines</div>
+        <input type="button" value="click" onclick="fun('cyan','blue')">
+    </body>
+</html>
+
+
+
+
+<!-- 2) - Write ES6 Code to find maximum number from an array using for...of loop. -->
+
+
+
+<html>
+    <body>
+        <script>
+            large=0;
+            arr=[10,50,30]
+            for(x of arr) {
+                if(x>large) {
+                    large = x
+                }
+            }
+            console.log(large)     // 50
+        </script>
+    </body>
+</html>
