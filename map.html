@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+
+            let map=new Map();
+            map.set("Agent1","Sage");
+            map.set("Agent2","Phoenix");
+            map.set("Agent3","Yoru");
+            map.set("Agent4","Neon");
+
+            let map1=new Map([["Agent1","Sage"],["Agent2","Phoenix"],["Agent3","Yoru"],["Agent4","Neon"]])
+            console.log(map)
+            map.delete("Agent1")
+            console.log(map)
+            map.set("Agent1","Chamber")
+            console.log(map)
+            map.set("Agent2","Jett")
+            console.log(map)
+        </script>
+    </body>
+</html>
+
+
+<!-- o/p 
+
+Map(4) {size: 4, Agent1 => Sage, Agent2 => Phoenix, Agent3 => Yoru, Agent4 => Neon}
+
+Map(3) {size: 3, Agent2 => Phoenix, Agent3 => Yoru, Agent4 => Neon}
+
+Map(4) {size: 4, Agent2 => Phoenix, Agent3 => Yoru, Agent4 => Neon, Agent1 => Chamber}
+
+Map(4) {size: 4, Agent2 => Jett, Agent3 => Yoru, Agent4 => Neon, Agent1 => Chamber} -->
