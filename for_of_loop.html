@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+            list=[80,90,100]
+            for(score of list) {
+                console.log(score);    // 80
+                                       // 90
+                                       // 100
+
+                document.write(score); // 8090100
+            }
+        </script>
+    </body>
+</html>
+
+<hr>
+
+<!-- array_entries -->
+
+
+<html>
+    <body>
+        <script>
+            list=['red','blue','green']
+            for(let[index,color] of list.entries()) {
+                console.log(`${color} is at index ${index}`)              // red is at index 0
+
+                                                                          // blue is at index 1
+
+                                                                          // green is at index 2
+            }
+        </script>
+    </body>
+</html>
