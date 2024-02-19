@@ -1,0 +1,92 @@
+<!--1) -  Write Ecmascript function to be called on button click. Take one division with some text and no
+     decoration initialy take font-size and style as default argument and pass background color and text color
+      while passing argument to function style change on button click event. -->
+
+
+<html>
+    <head>
+        <script>
+            fun=(bg,tx,size=50,style="italic") =>
+            {
+                i=document.getElementById("d");
+                i.style.color=tx;
+                i.style.fontSize=size;
+                i.style.fontStyle=style;
+                i.style.backgroundColor=bg;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d" style="width:50%;height:50%">spread happines</div>
+        <input type="button" value="click" onclick="fun('cyan','blue')">
+        document.write(<br>)
+    </body>
+</html>
+
+
+
+
+<!-- 2) - Write ES6 Code to find maximum number from an array using for...of loop. -->
+
+
+
+<html>
+    <body>
+        <script>
+            large=0;
+            arr=[10,50,30]
+            for(x of arr) {
+                if(x>large) {
+                    large = x
+                }
+            }
+            console.log(large)     // 50
+        </script>
+    </body>
+</html>
+
+
+
+<!-- 
+3) - Write an ES6 Code to calculate distance between two points.Take two point object consisting of xyz 
+     members .First object should be used to call distance function and second object should be pass inside
+    an argument. -->
+
+
+
+<html>
+    <body>
+        <script>
+            class point {
+                constructor(x,y,z) {
+                    this.x=x;
+                    this.y=y;
+                    this.z=z;
+                }
+                dist=(p2) => {
+                    let ans = Math.pow((this.x-p2.x),2)
+                }
+            }
+        </script>
+    </body>
+</html>    
+
+
+
+<!-- 4) - in two digit number second number must be power. -->
+
+
+<html>
+    <body>
+        <script>
+           n=23;
+           m=n%10;
+           n=parseInt(n/10);
+           mul=Math.pow(n,m);
+           document.write(mul);
+        </script>
+    </body>
+</html>
+
+
+
